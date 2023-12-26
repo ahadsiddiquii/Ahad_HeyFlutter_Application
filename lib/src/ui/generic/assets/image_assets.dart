@@ -4,6 +4,5 @@ class ImageAssets {
   static const String _imagePath = 'assets/images/';
 
   //Onboarding Assets
-  static const DUMMY_BACKGROUND_IMAGE =
-      '${_imagePath}dummy_background_image.png';
+  static const dummyBackgroundImage = '${_imagePath}dummy_background_image.jpg';
 }
