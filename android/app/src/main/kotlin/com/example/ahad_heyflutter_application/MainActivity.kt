@@ -1,4 +1,4 @@
-package com.example.ahad_heyflutter_application
+package ahad.heyflutter.application
 
 import io.flutter.embedding.android.FlutterActivity
 
