@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 class ThemeColors {
   ThemeColors._();
   //Application Theme Colors
-  static const Color kThemeColor = Color(0xFF78BBFF);
+  static const Color kThemeColor = Color.fromARGB(255, 55, 173, 118);
 
   //Screen Required Colors
   static const Color kAppBarColor = kThemeColor;
@@ -22,7 +22,7 @@ class ThemeColors {
   static const Color kFontSecondaryBlueColor = Color(0xFF325F8D);
   static const Color kFontSecondaryGreyColor = Color(0xFF727272);
 
-  static const Color kFontHintColor = Color(0xFFD1D1D1);
+  static const Color kFontHintColor = Color.fromARGB(255, 148, 147, 147);
   static const Color kFontSearchHintColor = Color(0xFFD5D5D5);
 
   //Product Tile Display

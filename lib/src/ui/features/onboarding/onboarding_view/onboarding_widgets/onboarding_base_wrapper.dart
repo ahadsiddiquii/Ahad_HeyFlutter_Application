@@ -3,7 +3,6 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 
 import '../../../../generic/assets/image_assets.dart';
-import '../../../../generic/constants/decorations.dart';
 import '../../../../generic/widgets/spacers/height_spacer.dart';
 
 class OnboardingBaseWrapper extends StatelessWidget {
@@ -40,19 +39,16 @@ class OnboardingBaseWrapper extends StatelessWidget {
                   .transparent, // You can set a background color if needed
             ),
           ),
-          Container(
-            margin: Decorations.kBorderMargin,
-            child: SingleChildScrollView(
-              child: Column(
-                crossAxisAlignment: crossAxisAlignment,
-                mainAxisAlignment: mainAxisAlignment,
-                children: [
-                  Column(
-                    children: children,
-                  ),
-                  const HeightSpacer(),
-                ],
-              ),
+          SingleChildScrollView(
+            child: Column(
+              crossAxisAlignment: crossAxisAlignment,
+              mainAxisAlignment: mainAxisAlignment,
+              children: [
+                Column(
+                  children: children,
+                ),
+                const HeightSpacer(),
+              ],
             ),
           ),
         ],

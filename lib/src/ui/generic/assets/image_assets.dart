@@ -5,4 +5,5 @@ class ImageAssets {
 
   //Onboarding Assets
   static const dummyBackgroundImage = '${_imagePath}dummy_background_image.jpg';
+  static const dummyProfileImage = '${_imagePath}profile_image.png';
 }

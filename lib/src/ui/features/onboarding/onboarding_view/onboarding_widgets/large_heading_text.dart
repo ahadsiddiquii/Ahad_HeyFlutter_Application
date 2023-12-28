@@ -15,7 +15,7 @@ class LargeHeadingText extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       alignment: Alignment.centerLeft,
-      margin: Decorations.kBorderMargin,
+      margin: Decorations.kBorderMargin * 2,
       child: GenericText(
         text,
         style: FontSizes.size25Bold(
