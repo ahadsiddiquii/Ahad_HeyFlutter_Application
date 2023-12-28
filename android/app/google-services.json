@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "175455387296",
+    "project_id": "ahad-heyflutter-application",
+    "storage_bucket": "ahad-heyflutter-application.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:175455387296:android:119ee7b886a582e5cdd3c5",
+        "android_client_info": {
+          "package_name": "ahad.heyflutter.application"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDn-t-Y1LqUTt53N5qYlPByprcin7JYbFY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
