@@ -12,23 +12,24 @@ class WideButton extends StatelessWidget {
     super.key,
     required this.onPressed,
     required this.buttonText,
-    this.needsTranslation = true,
     this.buttonHeight,
     this.buttonWidth,
     this.isTransparent = false,
     this.disableButton = false,
-    this.showArrowIcon = false,
     this.customColor = ThemeColors.kThemeColor,
+    this.customFontColor,
     this.isBottomPadding = true,
     this.borderAlreadyGiven = false,
+    this.prefixIcon,
   });
+
   final String buttonText;
-  final bool needsTranslation;
+  final String? prefixIcon;
   final VoidCallback onPressed;
   final bool isTransparent;
   final bool disableButton;
-  final bool showArrowIcon;
   final Color customColor;
+  final Color? customFontColor;
   final double? buttonWidth;
   final double? buttonHeight;
   final bool isBottomPadding;
@@ -51,7 +52,6 @@ class WideButton extends StatelessWidget {
         borderRadius:
             BorderRadius.circular(Decorations.kWideButtonBorderRadius),
         onTap: onPressed,
-        //  disableButton ? null : onPressed,
         child: Stack(
           children: [
             Container(
@@ -80,10 +80,27 @@ class WideButton extends StatelessWidget {
                       ? ThemeColors.kButtonTextSecondaryColor
                       : isTransparent
                           ? customColor
-                          : ThemeColors.kButtonTextColor,
+                          : customFontColor ?? ThemeColors.kButtonTextColor,
                 ),
               ),
             ),
+            if (prefixIcon != null)
+              Container(
+                margin: (buttonWidth == null && !borderAlreadyGiven)
+                    ? Decorations.kBorderMargin
+                    : null,
+
+                height: buttonHeight ?? Decorations.kWideButtonHeight,
+                // width: buttonWidth,
+                alignment: AlignmentDirectional.centerStart,
+                padding: const EdgeInsets.symmetric(
+                  vertical: 10,
+                ),
+                child: Image.asset(
+                  prefixIcon!,
+                  fit: BoxFit.contain,
+                ),
+              ),
           ],
         ),
       ),
